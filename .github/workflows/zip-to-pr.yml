@@ -98,9 +98,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           git checkout $BRANCH_NAME || git checkout -b $BRANCH_NAME
-          echo "Authorization: token $GITHUB TOKEN"
-          echo "$ZIP_URL"
-          wget --header "Authorization: token $GITHUB TOKEN" $ZIP_URL
+          wget $ZIP_URL
           unzip -o -qq ./$ZIP_FILENAME -d ./$THEME_NAME
           sudo chown -R $USER:$USER .
           sudo rm ./$ZIP_FILENAME
