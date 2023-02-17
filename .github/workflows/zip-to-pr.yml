@@ -84,6 +84,8 @@ jobs:
           echo "ZIP_FILENAME=${{ steps.match-filename-comment.outputs.group1 }}" >> $GITHUB_ENV
           echo "THEME_NAME=${{ steps.match-theme-name-comment.outputs.group1 }}" >> $GITHUB_ENV
           echo "BRANCH_NAME=auto/${{ steps.match-theme-name-comment.outputs.group1 }}" >> $GITHUB_ENV
+          echo "github env"
+          echo $GITHUB_ENV
 
       # All the rest of these actions will only run if there's a $ZIP_URL defined (otherwise the content doesn't fit our criteria)
 
