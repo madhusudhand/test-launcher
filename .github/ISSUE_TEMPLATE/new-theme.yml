@@ -7,7 +7,9 @@ body:
     attributes:
       value: |
         ### Thanks for contributing!
-        Please write name of the theme in the title, then fill in the details.
+
+        Please fill in the details of the new theme including screenshots and upload the ZIP file to automatically create the Pull request for review.
+
   - type: textarea
     id: summary
     attributes:
