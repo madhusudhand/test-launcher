@@ -1,5 +1,5 @@
 name: New theme
-description: Submit a new theme for review
+description: Submit a new theme for review!
 labels: "New theme"
 title: "[New Theme]: "
 body:
@@ -9,9 +9,10 @@ body:
         ### Thanks for contributing!
         Please write name of the theme in the title, then fill in the details.
   - type: textarea
-    id: theme
+    id: themezip
     attributes:
-        label: Theme ZIP file
-        placeholder: Attach the zip file of the theme by drag and dropping or selecting upload.
+      label: Theme ZIP
+      placeholder: |
+        Attach the zip file of the theme by drag and dropping or selecting upload.
     validations:
       required: true
