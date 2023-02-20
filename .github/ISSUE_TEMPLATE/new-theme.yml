@@ -1,6 +1,6 @@
 name: New theme
 description: Submit a new theme for review!
-labels: "New theme"
+labels: ["New theme"]
 title: "[New Theme]: "
 body:
   - type: markdown
