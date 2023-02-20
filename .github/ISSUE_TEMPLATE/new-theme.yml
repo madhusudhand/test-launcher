@@ -9,6 +9,12 @@ body:
         ### Thanks for contributing!
         Please write name of the theme in the title, then fill in the details.
   - type: textarea
+    id: summary
+    attributes:
+        label: Quick summary
+    validations:
+      required: true
+  - type: textarea
     id: themezip
     attributes:
       label: Theme ZIP
